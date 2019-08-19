@@ -1,0 +1,298 @@
+Script started on Mon 19 Aug 2019 02:05:47 PM UTC
+]0;root@lvm:/home/vagrant[?1034h[root@lvm vagrant]# yum install xfsdump
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.reconn.ru
+ * extras: centos-mirror.rbc.ru
+ * updates: centos-mirror.rbc.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package xfsdump.x86_64 0:3.1.7-1.el7 will be installed
+--> Processing Dependency: attr >= 2.0.0 for package: xfsdump-3.1.7-1.el7.x86_64
+--> Running transaction check
+---> Package attr.x86_64 0:2.4.46-13.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================
+ Package                    Arch                      Version                             Repository               Size
+========================================================================================================================
+Installing:
+ xfsdump                    x86_64                    3.1.7-1.el7                         base                    308 k
+Installing for dependencies:
+ attr                       x86_64                    2.4.46-13.el7                       base                     66 k
+
+Transaction Summary
+========================================================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 374 k
+Installed size: 1.1 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(2/2): xfsdump-3.1.7-1.el7.x86_64.rpm         0% [                                    ]  0.0 B/s |    0 B  --:--:-- ETA (1/2): attr-2.4.46-13.el7.x86_64.rpm                                                             |  66 kB  00:00:03     
+(2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                                            | 308 kB  00:00:03     
+------------------------------------------------------------------------------------------------------------------------
+Total                                                                                    99 kB/s | 374 kB  00:00:03     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : attr-2.4.46-13.el7.x86_64 [                                                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####                                                                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############                                                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################                                                     ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################                                                   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################                                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##############################                                          ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################                                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [######################################                                  ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#############################################                           ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##############################################                          ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################################                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################                     ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################################################                   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#######################################################                 ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##########################################################              ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################################################            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##############################################################          ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#################################################################       ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################################     ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################################################################   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [######################################################################  ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################################################### ] 1/2  Installing : attr-2.4.46-13.el7.x86_64                                                                            1/2 
+  Installing : xfsdump-3.1.7-1.el7.x86_64 [                                                                       ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [####                                                                   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#########                                                              ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##############                                                         ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##################                                                     ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#####################                                                  ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##########################                                             ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############################                                        ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################                                    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [########################################                               ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#############################################                          ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#################################################                      ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [####################################################                   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [######################################################                 ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [########################################################               ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#############################################################          ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############################################################        ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [####################################################################   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#####################################################################  ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################### ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64                                                                           2/2 
+  Verifying  : attr-2.4.46-13.el7.x86_64                                                                            1/2 
+  Verifying  : xfsdump-3.1.7-1.el7.x86_64                                                                           2/2 
+
+Installed:
+  xfsdump.x86_64 0:3.1.7-1.el7                                                                                          
+
+Dependency Installed:
+  attr.x86_64 0:2.4.46-13.el7                                                                                           
+
+Complete!
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# yum install net-tools
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.reconn.ru
+ * extras: centos-mirror.rbc.ru
+ * updates: centos-mirror.rbc.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package net-tools.x86_64 0:2.0-0.24.20131004git.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================
+ Package                   Arch                   Version                                    Repository            Size
+========================================================================================================================
+Installing:
+ net-tools                 x86_64                 2.0-0.24.20131004git.el7                   base                 306 k
+
+Transaction Summary
+========================================================================================================================
+Install  1 Package
+
+Total download size: 306 k
+Installed size: 918 k
+Is this ok [y/d/N]: y
+Downloading packages:
+net-tools-2.0-0.24.20131004git.el7.x86_64.rpm 0% [                                    ]  0.0 B/s |    0 B  --:--:-- ETA net-tools-2.0-0.24.20131004git.el7.x86_64.rpm                                                    | 306 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [                                                        ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [###                                                     ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#######                                                 ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [########                                                ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [############                                            ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [################                                        ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#################                                       ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#####################                                   ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#######################                                 ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [########################                                ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#########################                               ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [##########################                              ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [############################                            ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [################################                        ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#################################                       ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [###################################                     ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [####################################                    ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [########################################                ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [###########################################             ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#############################################           ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [################################################        ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [###################################################     ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [####################################################    ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [#####################################################   ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [######################################################  ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64 [####################################################### ] 1/1  Installing : net-tools-2.0-0.24.20131004git.el7.x86_64                                                            1/1 
+  Verifying  : net-tools-2.0-0.24.20131004git.el7.x86_64                                                            1/1 
+
+Installed:
+  net-tools.x86_64 0:2.0-0.24.20131004git.el7                                                                           
+
+Complete!
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::5054:ff:fec9:c704  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:c9:c7:04  txqueuelen 1000  (Ethernet)
+        RX packets 23402  bytes 18044858 (17.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 8116  bytes 710073 (693.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.29.101  netmask 255.255.255.0  broadcast 192.168.29.255
+        inet6 fe80::a00:27ff:fee2:eff2  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:e2:ef:f2  txqueuelen 1000  (Ethernet)
+        RX packets 132  bytes 15395 (15.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24  bytes 3280 (3.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;root@lvm:/home/vagrant[root@lvm vagrant]#  pvcreate /dev/sdb
+  Can't open /dev/sdb exclusively.  Mounted filesystem?
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+├─otus-small            253:3    0  100M  0 lvm  
+└─otus-test-real        253:4    0   10G  0 lvm  
+  ├─otus-test           253:2    0   10G  0 lvm  /data
+  └─otus-test--snap     253:6    0   10G  0 lvm  
+sdc                       8:32   0    2G  0 disk 
+├─otus-test-real        253:4    0   10G  0 lvm  
+│ ├─otus-test           253:2    0   10G  0 lvm  /data
+│ └─otus-test--snap     253:6    0   10G  0 lvm  
+└─otus-test--snap-cow   253:5    0  500M  0 lvm  
+  └─otus-test--snap     253:6    0   10G  0 lvm  
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# umount /data/
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# vgremove otus-test
+  Volume group "otus-test" not found
+  Cannot process volume group otus-test
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# vgremove otus-test[C[K[K[K[K[K
+Do you really want to remove volume group "otus" containing 3 logical volumes? [y/n]: y
+Do you really want to remove active origin logical volume otus/test with 1 snapshot(s)? [y/n]: y
+  Logical volume "test-snap" successfully removed
+  Logical volume "test" successfully removed
+Do you really want to remove active logical volume otus/small? [y/n]: y
+  Logical volume "small" successfully removed
+  Volume group "otus" successfully removed
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# vgremove otus-test[5Pumount /data/[8Plsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# lvmdiskscan
+  /dev/VolGroup00/LogVol00 [     <37.47 GiB] 
+  /dev/VolGroup00/LogVol01 [       1.50 GiB] 
+  /dev/sda2                [       1.00 GiB] 
+  /dev/sda3                [     <39.00 GiB] LVM physical volume
+  /dev/sdb                 [      10.00 GiB] LVM physical volume
+  /dev/sdc                 [       2.00 GiB] LVM physical volume
+  /dev/sdd                 [       1.00 GiB] 
+  /dev/sde                 [       1.00 GiB] 
+  2 disks
+  3 partitions
+  2 LVM physical volume whole disks
+  1 LVM physical volume
+]0;root@lvm:/home/vagrant[root@lvm vagrant]#  pvcreate /dev/sdb
+  Physical volume "/dev/sdb" successfully created.
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# vgcreate vg_root /dev/sdb
+  Volume group "vg_root" successfully created
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# # lvcreate -n lv_root -l +100%FREE /dev/vg_root
+]0;root@lvm:/home/vagrant[root@lvm vagrant]#  mkfs.xfs /dev/vg_root/lv_root
+/dev/vg_root/lv_root: No such file or directory
+Usage: mkfs.xfs
+/* blocksize */		[-b log=n|size=num]
+/* metadata */		[-m crc=0|1,finobt=0|1,uuid=xxx]
+/* data subvol */	[-d agcount=n,agsize=n,file,name=xxx,size=num,
+			    (sunit=value,swidth=value|su=num,sw=num|noalign),
+			    sectlog=n|sectsize=num
+/* force overwrite */	[-f]
+/* inode size */	[-i log=n|perblock=n|size=num,maxpct=n,attr=0|1|2,
+			    projid32bit=0|1]
+/* no discard */	[-K]
+/* log subvol */	[-l agnum=n,internal,size=num,logdev=xxx,version=n
+			    sunit=value|su=num,sectlog=n|sectsize=num,
+			    lazy-count=0|1]
+/* label */		[-L label (maximum 12 characters)]
+/* naming */		[-n log=n|size=num,version=2|ci,ftype=0|1]
+/* no-op info only */	[-N]
+/* prototype file */	[-p fname]
+/* quiet */		[-q]
+/* realtime subvol */	[-r extsize=num,size=num,rtdev=xxx]
+/* sectorsize */	[-s log=n|size=num]
+/* version */		[-V]
+			devicename
+<devicename> is required unless -d name=xxx is given.
+<num> is xxx (bytes), xxxs (sectors), xxxb (fs blocks), xxxk (xxx KiB),
+      xxxm (xxx MiB), xxxg (xxx GiB), xxxt (xxx TiB) or xxxp (xxx PiB).
+<value> is xxx (512 byte blocks).
+]0;root@lvm:/home/vagrant[root@lvm vagrant]#  mkfs.xfs /dev/vg_root/lv_root
+/dev/vg_root/lv_root: No such file or directory
+Usage: mkfs.xfs
+/* blocksize */		[-b log=n|size=num]
+/* metadata */		[-m crc=0|1,finobt=0|1,uuid=xxx]
+/* data subvol */	[-d agcount=n,agsize=n,file,name=xxx,size=num,
+			    (sunit=value,swidth=value|su=num,sw=num|noalign),
+			    sectlog=n|sectsize=num
+/* force overwrite */	[-f]
+/* inode size */	[-i log=n|perblock=n|size=num,maxpct=n,attr=0|1|2,
+			    projid32bit=0|1]
+/* no discard */	[-K]
+/* log subvol */	[-l agnum=n,internal,size=num,logdev=xxx,version=n
+			    sunit=value|su=num,sectlog=n|sectsize=num,
+			    lazy-count=0|1]
+/* label */		[-L label (maximum 12 characters)]
+/* naming */		[-n log=n|size=num,version=2|ci,ftype=0|1]
+/* no-op info only */	[-N]
+/* prototype file */	[-p fname]
+/* quiet */		[-q]
+/* realtime subvol */	[-r extsize=num,size=num,rtdev=xxx]
+/* sectorsize */	[-s log=n|size=num]
+/* version */		[-V]
+			devicename
+<devicename> is required unless -d name=xxx is given.
+<num> is xxx (bytes), xxxs (sectors), xxxb (fs blocks), xxxk (xxx KiB),
+      xxxm (xxx MiB), xxxg (xxx GiB), xxxt (xxx TiB) or xxxp (xxx PiB).
+<value> is xxx (512 byte blocks).
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# lsblk mkfs.xfs /dev/vg_root/lv_root[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# lvcreate -n lv_root -l +100%FREE /dev/vg_root
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# # lvcreate -n lv_root -l +100%FREE /dev/vg_root[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+WARNING: ext4 signature detected on /dev/vg_root/lv_root at offset 1080. Wipe it? [y/n]: y
+  Wiping ext4 signature on /dev/vg_root/lv_root.
+  Logical volume "lv_root" created.
+]0;root@lvm:/home/vagrant[root@lvm vagrant]#  lvcreate -n lv_root -l +100%FREE /dev/vg_root[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@#[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsblk[K mkfs.xfs /dev/vg_root/lv_root
+meta-data=/dev/vg_root/lv_root   isize=512    agcount=4, agsize=655104 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2620416, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+]0;root@lvm:/home/vagrant[root@lvm vagrant]#  mount /dev/vg_root/lv_root /mnt
+]0;root@lvm:/home/vagrant[root@lvm vagrant]# xfsdump -J - /dev/VolGroup00/LogVol00 | xfsrestore -J - /mnt
+xfsrestore: using file dump (drive_simple) strategy
+xfsrestore: version 3.1.7 (dump format 3.0)
+xfsdump: using file dump (drive_simple) strategy
+xfsdump: version 3.1.7 (dump format 3.0)
+xfsdump: level 0 dump of lvm:/
+xfsdump: dump date: Mon Aug 19 14:16:17 2019
+xfsdump: session id: f2982b00-5c3e-40d1-92f2-f336c2a3da2f
+xfsdump: session label: ""
+xfsrestore: searching media for dump
+xfsdump: ino map phase 1: constructing initial dump list
+xfsdump: ino map phase 2: skipping (no pruning necessary)
+xfsdump: ino map phase 3: skipping (only one dump stream)
+xfsdump: ino map construction complete
+xfsdump: estimated dump size: 765803136 bytes
+xfsdump: creating dump session media file 0 (media 0, file 0)
+xfsdump: dumping ino map
+xfsdump: dumping directories
+xfsrestore: examining media file 0
+xfsrestore: dump description: 
+xfsrestore: hostname: lvm
+xfsrestore: mount point: /
+xfsrestore: volume: /dev/mapper/VolGroup00-LogVol00
+xfsrestore: session time: Mon Aug 19 14:16:17 2019
+xfsrestore: level: 0
+xfsrestore: session label: ""
+xfsrestore: media label: ""
+xfsrestore: file system id: b60e9498-0baa-4d9f-90aa-069048217fee
+xfsr
