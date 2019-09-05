@@ -1,0 +1,39 @@
+1-ый метод
+1) захожу при загрузке в "e"
+2) удал€ю console=ttys0,115200n8
+3) добавл€ю init=/bin/sh и нажимаю сtrl-x, попадаю в emergency mode
+5) делаю mount -o remount,rw /
+6) /etc/selinux/config мен€ю параметр SELINUX на disabled
+7) sudo setenforce 0
+8) passwd root
+мен€ю пароль
+
+2-ой метод
+1) захожу при загрузке в "e"
+2) удал€ю console=ttys0,115200n8
+3) добавл€ю rd.break и нажимаю сtrl-x, попадаю в emergency mode
+4) mount -o remount,rw /sysroot
+5) chroot /sysroot
+6) passwd root
+7) touch /.autorelabel
+
+3-ий метод 
+1) захожу при загрузке в "e"
+2) удал€ю console=ttys0,115200n8
+3) добавл€ю init=/sysroot/bin/sh мен€ю  ro на rw и нажимаю сtrl-x, попадаю в emergency mode
+5) /etc/selinux/config мен€ю параметр SELINUX на disabled
+6) sudo setenforce 0
+7) passwd root
+мен€ю пароль
+
+«агрузка с LVM
+
+ vgs
+vgrename VolGroup00 OtusRoot
+правлю  /etc/fstab, /etc/default/grub, /boot/grub2/grub.cfg
+mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
+
+добавл€ю модуль
+создал скрипты module-setup.sh и tesh.sh
+дал им права на исполнение
+выполнил dracut -f -v
